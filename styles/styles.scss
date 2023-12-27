@@ -1,0 +1,47 @@
+//VARIAVEIS
+    //CORES
+    $cor-primaria-roxoescuro:#0C0421;
+    $cor-secundaria-roxovibrantes: #4E75FF;
+    $cor-terciaria-roxocalmante: #85A0ff;
+    $cor-quaternaria-lilas: #E8F5C8;
+    $cor-default-lilas: #CAD4FA;
+    $cor-gradiente-primario: linear-gradient(180deg, #E8F5C8 0%, #FFFFFF 96.87%);
+    $cor-gradiente-secundario: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(202, 212, 250, 0.3) 100%);
+
+    //FONTES
+    $ft-textos: 'Montserrat', sans-serif;
+    $ft-titulos: 'Krona One', sans-serif;
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: $cor-gradiente-primario;
+    padding: 2rem;
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.6rem;
+        .linha {
+            border-top: 1px solid black;
+            width: 80%;
+        }
+        ul {
+            display: inline-flex;
+            gap: 2rem;
+            li {
+                list-style-type: none;
+            }
+            a {
+                text-decoration: none;
+                color: $cor-primaria-roxoescuro;
+                font-weight: 500;
+                font-family: $ft-textos;
+            }
+        }
+    }
+}
